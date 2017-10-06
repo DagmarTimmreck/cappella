@@ -30,13 +30,17 @@ header {
   padding: 0.5rem;
   text-align: right;
 }
-figure{
+.logo {
+  font-size: 1.5rem;
+}
+figure {
   margin: 1rem 0;
 }
 img {
   width: 100%;
 }
 figcaption {
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -52,10 +56,13 @@ h1 {
   padding: 0.5rem;
   text-align: center;
 }
-.date {
+.date,
+.location {
   font-weight: bold;
 }
-
+.description {
+  display: block;
+}
 nav {
   display: flex;
   justify-content: center;
@@ -79,24 +86,37 @@ nav a {
     width: 30rem;
     font-size: 1.25rem;
   }
+  figure {
+    width: 80%;
+    margin: 0 auto;
+  }
   .concert {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    height: 3rem;
+    justify-content: center;
     padding-bottom: 1rem;
   }
   .date {
+    width: 20%;
     padding-right: 1rem;
+    font-weight: normal;
   }
   .title {
-    max-width: 50%;
+    width: 50%;
     padding: 0 1rem;
     border-right: 0.1rem solid;
     border-left: 0.1rem solid;
   }
   .location {
+    width: 30%;
     padding-left: 1rem;
+    font-weight: normal;
+  }
+  .gallery img {
+    width: 30%;
+  }
+  .impressum {
+    text-align: center;
   }
   footer {
     border-top: 0.1rem solid;
